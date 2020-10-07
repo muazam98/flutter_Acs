@@ -1,4 +1,4 @@
-package com.nuvopoint.flutter_nfc_acs;
+package com.vnet.flutter_nfc_acs;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -102,11 +102,11 @@ public class FlutterNfcAcsPlugin extends BluetoothPermissions implements Flutter
   @Override
   public void onAttachedToEngine(final @NonNull FlutterPluginBinding flutterPluginBinding) {
     context = flutterPluginBinding.getApplicationContext();
-    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.nuvopoint.com/nfc/acs");
-    devicesChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.nuvopoint.com/nfc/acs/devices");
-    deviceBatteryChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.nuvopoint.com/nfc/acs/device/battery");
-    deviceStatusChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.nuvopoint.com/nfc/acs/device/status");
-    deviceCardChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.nuvopoint.com/nfc/acs/device/card");
+    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.vnet.com/nfc/acs");
+    devicesChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.vnet.com/nfc/acs/devices");
+    deviceBatteryChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.vnet.com/nfc/acs/device/battery");
+    deviceStatusChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.vnet.com/nfc/acs/device/status");
+    deviceCardChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "flutter.vnet.com/nfc/acs/device/card");
   }
 
   @Override
